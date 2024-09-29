@@ -127,6 +127,8 @@ def satellite_images():
                     st.image(oil_img_rgb, caption="RGB Ratio for Oil Spill Detection", use_column_width=True)
                 else:
                     st.write("No oil spill data available for this location.")
+                st.write("NO OIL SPILL DETECTED")
+   
 
             except ValueError:
                 st.write("Invalid latitude/longitude input. Please enter valid numbers.")
