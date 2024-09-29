@@ -14,7 +14,8 @@ This project aims to create a real-time vessel tracking system with anomaly dete
 ## Overview
 This project combines real-time vessel tracking data with satellite imagery to detect anomalies in vessel behavior and identify potential oil spills in maritime regions. The system automates the monitoring process, enabling early detection of environmental hazards and enabling timely responses.
 
-![Dashboard Preview]()
+![Dashboard Preview](![image](https://github.com/user-attachments/assets/686b805d-fd6c-4a7d-8d21-d91b828f9e1c)
+)
 
 ## Features
 - **AIS Data Integration**: Real-time vessel tracking based on AIS data (Automatic Identification System).
