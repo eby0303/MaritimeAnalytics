@@ -1,5 +1,6 @@
 # # Automated Vessel Anomaly and Oil Spill Detection System
 
+##THIS IS A PROTOTYPE
 This project aims to create a real-time vessel tracking system with anomaly detection and oil spill identification using AIS data and satellite imagery.
 
 ## Table of Contents
@@ -15,21 +16,35 @@ This project aims to create a real-time vessel tracking system with anomaly dete
 This project combines real-time vessel tracking data with satellite imagery to detect anomalies in vessel behavior and identify potential oil spills in maritime regions. The system automates the monitoring process, enabling early detection of environmental hazards and enabling timely responses.
 
 ![Dashboard Preview](https://github.com/user-attachments/assets/0f579425-1b52-4bbb-a4d1-18d326d24004)
-)
+
 
 ## Features
-- **AIS Data Integration**: Real-time vessel tracking based on AIS data (Automatic Identification System).
-- **Anomaly Detection**: Identify anomalies in vessel behavior based on speed, course, or navigation patterns.
-- **Satellite Imagery Analysis**: High-resolution satellite imagery from Sentinel Hub is used for detecting potential oil spills.
-- **Real-Time Monitoring**: Continuous monitoring of vessels and the surrounding water for quick detection of incidents.
-- **Early Warning System**: Automated alerts when anomalies or oil spills are detected.
-  
-## Technologies Used
-- **Python**: For back-end logic and anomaly detection algorithms.
-- **Streamlit**: For building the interactive web dashboard.
-- **Sentinel Hub API**: For accessing satellite imagery.
-- **AIS Data**: Used for real-time vessel tracking and movement analysis.
-- **Folium/Leaflet Maps**: For plotting vessel positions on interactive maps.
+- **AIS Data Integration**: Real-time vessel tracking with key details like speed, course, MMSI, and position.
+- **Anomaly Detection**: Automatically detects vessel movement anomalies such as:
+  - Deviation from expected course
+  - Unusual speed fluctuations
+  - Course correction delays
+- **Satellite Imagery Integration**: Uses Sentinel Hub high-resolution imagery to detect potential oil spills.
+- **Automated Alerts**: Alerts when anomalies or potential spills are detected for rapid response.
+- **Comprehensive Dashboard**: Visualize vessel positions, statuses, and anomalies on an interactive map.
+
+## Proposed Solution/Prototype:
+1. **AIS Data Integration**: Real-time updates on vessel tracking using AIS data to monitor vessel positions and movements.
+2. **Satellite Imagery**: High-resolution imagery from Sentinel Hub is used to identify oil spills, ensuring continuous surveillance of critical waters.
+3. **Real-Time Anomaly Detection**: Monitors vessel movements for anomalies such as irregular speed, changes in course, and other unusual activities.
+4. **Oil Spill Detection**: Identifies oil spills based on satellite imagery combined with vessel data, enabling timely interventions.
+5. **Early Detection Mechanism**: The system enables early identification of oil spills or vessel anomalies for rapid response and mitigation.
+6. **Automated Monitoring**: The process is fully automated, integrating vessel tracking and satellite imagery for real-time monitoring.
+
+## Technology Stack
+- **Frontend**: Streamlit for interactive dashboards
+- **Backend**: Python with Flask
+- **Database**: MySQL (for AIS data storage)
+- **Vessel Tracking**: AIS API for real-time vessel movement data
+- **Satellite Imagery**: Sentinel Hub API for oil spill detection
+- **Mapping**: Folium and Streamlit Map integration
+- **Deployment**: Docker, AWS for cloud hosting
+
 
 ## Setup
 To run this project locally, follow these steps:
